@@ -20,8 +20,11 @@ def run_model():
         in_model = pd.DataFrame({
             "Hours_Worked_Per_Week": [Hours_Worked_Per_Week],
             "Well_Being_Score": [Well_Being_Score],
-            "Employment_Type_Remote": [Employment_Type_Remote]  
+            "Employment_Type_Remote": [Employment_Type_Remote],
+            "Balance_Ratio": [Well_Being_Score/Hours_Worked_Per_Week],
+            "Hours_WellBeing_Interaction" : [Hours_Worked_Per_Week/Well_Being_Score]
         })
+
         predict(model_tree,in_model)
         want_to_continue = int(input("Want to continue, Yes-1 & No-0 : "))
         if want_to_continue==0: break
