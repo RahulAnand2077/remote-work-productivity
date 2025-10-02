@@ -15,12 +15,12 @@ This project predicts productive vs unproductive work-from-home days for employe
 The model uses a Decision Tree Classifier with hyperparameter tuning and cross-validation to maximize predictive accuracy while keeping the model interpretable.
 
 Features Used
-| Feature	| Description
-| Hours_Worked_Per_Week	| Number of hours worked in a week
-| Well_Being_Score |	Employee’s well-being score
-| Employment_Type_Remote |	1 = Remote, 0 = In-Office
-| Balance_Ratio	| Well_Being_Score / Hours_Worked_Per_Week
-| Hours_WellBeing_Interaction |	Hours_Worked_Per_Week × Well_Being_Score
+| Feature	| Description |
+| Hours_Worked_Per_Week	| Number of hours worked in a week |
+| Well_Being_Score |	Employee’s well-being score |
+| Employment_Type_Remote |	1 = Remote, 0 = In-Office |
+| Balance_Ratio	| Well_Being_Score / Hours_Worked_Per_Week |
+| Hours_WellBeing_Interaction |	Hours_Worked_Per_Week × Well_Being_Score |
 
 Note: Overwork_Flag was initially considered but found to have zero importance and removed.
 
@@ -50,10 +50,15 @@ Employee_ID, Hours_Worked_Per_Week, Productivity_Score, Well_Being_Score, Employ
 ## Project Structure
 .
 ├── main.py                 # Entry point for interactive prediction
+
 ├── data_preprocess.py      # Data loading & feature engineering
+
 ├── model.py                # Decision Tree training, tuning, prediction
+
 ├── remote_work_productivity.csv  # Dataset
+
 ├── test.ipynb              # To test and fine tune 
+
 └── README.md
 
 ## How to Run
