@@ -52,11 +52,16 @@ Employee_ID, Hours_Worked_Per_Week, Productivity_Score, Well_Being_Score, Employ
 ## Project Structure
 ```bash
 .
-├── main.py                 # Entry point for interactive prediction
-├── data_preprocess.py      # Data loading & feature engineering
-├── model.py                # Decision Tree training, tuning, prediction
-├── remote_work_productivity.csv  # Dataset
-├── test.ipynb              # To test and fine tune 
+├── src
+    ├── main.py                 # Entry point for interactive prediction
+    ├── data_preprocess.py      # Data loading & feature engineering
+    ├── model.py                # Decision Tree training, tuning, prediction
+├── data              
+    ├── remote_work_productivity.csv  # Dataset
+├── test
+    ├── test.ipynb              # To test and fine tune 
+├── tree
+    ├── decision_tree.png
 └── README.md
 ```
 
@@ -65,7 +70,7 @@ Employee_ID, Hours_Worked_Per_Week, Productivity_Score, Well_Being_Score, Employ
 1. Run the main script:
 
 ```bash
-python main.py
+python src/main.py
 ```
 
 2. Input features interactively:
