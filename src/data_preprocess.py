@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 def get_data():
-    df = pd.read_csv('remote_work_productivity.csv')
+    df = pd.read_csv('data/remote_work_productivity.csv')
 
     df["Productive"] = (df["Productivity_Score"] > 70).astype(int)
     df = pd.get_dummies(df, columns=["Employment_Type"], drop_first=True)

@@ -10,7 +10,7 @@ def run_model():
     
     plt.figure(figsize=(12,8))
     plot_tree(model_tree, filled=True, feature_names=X.columns, class_names=["Unproductive","Productive"], rounded=True, proportion=True)
-    plt.savefig("decision_tree.png", dpi=300)
+    plt.savefig("tree/decision_tree.png", dpi=300)
 
     while True:
         Hours_Worked_Per_Week = int(input("Enter Hours worked per Week : "))
