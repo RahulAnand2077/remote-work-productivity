@@ -122,7 +122,7 @@ Predicted: Productive
 ## Visualization
 
 The decision tree can be visualized using plot_tree in model.py.
-![Graph 1](decision_tree.png)
+![Graph 1](tree/decision_tree.png)
 
 ## Notes
 
